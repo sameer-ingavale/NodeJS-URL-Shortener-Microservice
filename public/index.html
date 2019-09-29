@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico" />
-    <title>URL Shortener</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/fda19063e7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <form action="/api/url/shorten" method="POST">
-      <input type="text" name="longUrl" required />
-      <button type="submit">Submit</button>
-    </form>
+    <div class="body-wrapper">
+      <div class="mainWrapper">
+        <h1>Sameer's URL Shortener Microservice</h1>
+        <div class="form-wrapper">
+          <form action="/api/url/shorten" method="POST">
+            <input
+              class="input-url"
+              type="link"
+              name="longUrl"
+              placeholder="Paste a link to shorten"
+              required
+            />
+            <button class="submit-button" type="submit">Shorten</button>
+          </form>
+        </div>
+
+        <div class="text-wrapper">
+          <h3>User Stories</h3>
+          <ul>
+            <li>
+              I can enter a URL in the input field and I will receive a
+              shortened URL in the JSON response.
+            </li>
+            <li>
+              When I visit that shortened URL, it will redirect me to my
+              original link.
+            </li>
+          </ul>
+          <h3>Example Usage</h3>
+          <code>
+            <a
+              href="https://sameers-url-shortener.herokuapp.com/YCoy9ID1"
+              target="_blank"
+              class="code"
+            >
+              "https://sameers-url-shortener.herokuapp.com/YCoy9ID1</a
+            ></code
+          >
+          <h3>Example Output</h3>
+          <code class="code"
+            >{ "IP": "72.198.91.159", "Language": "en-US", "OS": "Mac OS
+            10.14.6" }</code
+          >
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href=" https://github.com/sameer-ingavale" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/sameeringavale/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <p>
+          For
+          <a
+            href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/request-header-parser-microservice/"
+            target="_blank"
+            >Free Code Camp Project</a
+          >
+        </p>
+        <p>
+          Copyright ©
+          <a href="https://www.freecodecamp.org/sameer-ingavale" target="_blank"
+            >Sameer Ingavale.</a
+          >
+          All right reserved.
+        </p>
+      </div>
+    </div>
   </body>
 </html>

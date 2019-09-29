@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "lato";
+  src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url(fonts/Lato-Light.ttf);
+}
+
+* {
+  font-family: lato-light;
+}
+
+a:link {
+  text-decoration: none;
+  color: #dd127b;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #dd127b;
+}
+a:hover {
+  text-decoration: underline;
+  color: #00ad9e;
+}
+
+h1 {
+  font-family: lato;
+  text-align: center;
+  line-height: 2rem;
+}
+
+h3 {
+  font-family: lato;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainWrapper {
+  width: 60vw;
+  background-color: #f1e9d2;
+  color: #333;
+  font-size: 14px;
+  border-radius: 12px;
+  margin-top: 8vh;
+  margin-bottom: 7vh;
+  padding: 20px 30px 30px 30px;
+  box-shadow: 0px 0px 15px 0px #aaa;
+  border: none;
+  line-height: 1.5rem;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 0px 20px 0px;
+}
+
+.input-url {
+  width: 100vh;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  padding: 0px 10px 0px 10px;
+  color: #0645ad;
+  font-size: 14px;
+}
+
+.input-url:focus {
+  outline: none;
+}
+
+.submit-button {
+  height: 30px;
+  width: 75px;
+  border: none;
+  color: white;
+  background-color: #dd127b;
+  font-family: lato;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.submit-button:hover {
+  background-color: #00ad9e;
+  color: white;
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+.code {
+  background-color: #eee;
+  color: #333;
+  padding: 6px 12px 7px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.fab {
+  font-size: 32px;
+}
+
+i {
+  margin: 0px 5px 0px 5px;
+}
+
+.footer {
+  text-align: center;
+  line-height: 1rem;
+}

@@ -29,7 +29,7 @@ router.post("/shorten", async (req, res) => {
       let url = await Url.findOne({ longUrl });
 
       if (url) {
-        res.json({ ShortUrl: url.shortUrl });
+        res.json({ OriginalUrl: url.longUrl, ShortUrl: url.shortUrl });
       } else {
         const urlCode = shortid.generate();
         const shortUrl = baseUrl + "/" + urlCode;
@@ -43,13 +43,13 @@ router.post("/shorten", async (req, res) => {
 
         await url.save();
 
-        res.json({ ShortUrl: url.shortUrl });
+        res.json({ OriginalUrl: url.longUrl, ShortUrl: url.shortUrl });
       }
     } catch (error) {
       return res.status(500).json("Server error");
     }
   }
-  return res.status(400).json("long url is invalid");
+  return res.status(400).json("URL you entered is invalid");
 });
 
 module.exports = router;
