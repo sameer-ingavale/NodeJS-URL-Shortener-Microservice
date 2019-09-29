@@ -1,4 +1,4 @@
 {
   "mongoURI": "mongodb+srv://dbUser:mongodb007@url-e293r.mongodb.net/test?retryWrites=true&w=majority",
-  "baseUrl": "http://localhost:5000"
+  "baseUrl": "https://sameers-url-shortener.herokuapp.com"
 }
