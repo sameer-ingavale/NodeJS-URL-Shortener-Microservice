@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1088px) {
+  .submit-button {
+    margin-top: 10px;
+  }
+}
+
 @font-face {
   font-family: "lato";
   src: url(fonts/Lato-Regular.ttf);
@@ -29,7 +35,7 @@ a:hover {
 h1 {
   font-family: lato;
   text-align: center;
-  line-height: 2rem;
+  line-height: 2.2rem;
 }
 
 h3 {
@@ -65,13 +71,14 @@ h3 {
 }
 
 .input-url {
-  width: 100vh;
+  width: 50vw;
   height: 30px;
   border: none;
   border-radius: 6px;
   padding: 0px 10px 0px 10px;
   color: #0645ad;
   font-size: 14px;
+  margin-right: 10px;
 }
 
 .input-url:focus {
@@ -85,7 +92,6 @@ h3 {
   color: white;
   background-color: #dd127b;
   font-family: lato;
-  margin-left: 10px;
   border-radius: 6px;
   font-size: 14px;
 }
@@ -106,6 +112,7 @@ h3 {
   border: none;
   border-radius: 6px;
   font-size: 14px;
+  line-height: 25px;
 }
 
 .fab {
